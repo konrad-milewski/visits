@@ -1,10 +1,9 @@
 <template>
-  <Navigation />
+  <Navigation @filter="filter" :visits="visits" />
   <div class="visitblock-container">
     <div v-for="visit in visits" :key="visit.id">
       <VisitBlock :visit="visit" />
-  </div>
-   
+    </div>
   </div>
 
   <router-link class="btn left-top-pos" to="/auth">Wyloguj</router-link>
@@ -24,19 +23,45 @@ export default {
   props: {
     showAddTask: Boolean,
   },
+
   data() {
     return {
-      visits : []
-    }
+      visits: [],
+    };
   },
+
   methods: {
     ...mapActions(["fetchAllVisits"]),
+    filter(operator) {
+      switch (operator) {
+        case "today":
+          let today = new Date();
+          this.chosenFilter = "today";
+
+          this.visits = this.allVisits
+            .filter((x) => x.fromUserId === this.user.id)
+            .filter((x) => {
+              return today.toDateString() == new Date(x.date).toDateString();
+            });
+
+          break;
+
+        case "all": {
+          this.visits = this.allVisits.filter(
+            (x) => x.fromUserId === this.user.id
+          );
+        }
+        default:
+          break;
+      }
+    },
   },
   async created() {
-     let res = await this.fetchAllVisits();
-     this.visits = this.allVisits
+    console.log("is this working");
+    let res = await this.fetchAllVisits();
+    this.visits = this.allVisits.filter((x) => x.fromUserId === this.user.id);
   },
-  computed: mapGetters(["allVisits"]),
+  computed: mapGetters(["allVisits", "user"]),
 };
 </script>
 

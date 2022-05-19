@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import router from "../../router";
 const state = {
   visits: [{ id: "dummy" }],
 };
@@ -15,8 +15,9 @@ const actions = {
   },
   async addVisit({ commit }, visitObj) {
     const res = await axios.post(`http://localhost:5000/visits`, visitObj);
-    console.log(res)
+
     commit("newVisit", res.data);
+    router.push("/");
   },
 };
 

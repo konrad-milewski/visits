@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   data() {
@@ -64,6 +64,7 @@ export default {
       location: "",
     };
   },
+  computed: mapGetters(["user"]),
   methods: {
     ...mapActions(["addVisit"]),
     onSubmit(e) {
@@ -88,14 +89,16 @@ export default {
         status: "secondary",
         status_description: "W oczekiwaniu",
         id: Math.floor(Math.random() * 100000),
-         icon: "fa-question-circle"
+        icon: "fa-question-circle",
       };
 
-      newVisit = { ...newVisit, ...additionalData };
+      newVisit = { ...newVisit, ...additionalData, fromUserId : this.user.id };
+     
 
       console.log(newVisit);
-      this.$router.push("/");
+    
       this.addVisit(newVisit);
+     
     },
   },
 };

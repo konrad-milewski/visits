@@ -52,9 +52,8 @@ export default {
       const userData = {
         name: this.name,
         surname: this.surname,
-        phone: this.phone,
-        date: this.date,
-        time: this.time,
+        email: this.email,
+       password:this.password
       };
 
       if (Object.values(userData).some((x) => x === "")) {
@@ -63,8 +62,8 @@ export default {
       }
 
       userData.id = Math.floor(Math.random() * 100000);
+
       
-      this.$router.push("/");
       this.registerUser(userData);
     },
   },
