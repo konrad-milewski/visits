@@ -7,6 +7,7 @@
   </div>
 
   <router-link class="btn left-top-pos" to="/auth">Wyloguj</router-link>
+  
 </template>
 
 <script>
@@ -33,15 +34,25 @@ export default {
   methods: {
     ...mapActions(["fetchAllVisits"]),
     filter(operator) {
+      let today = new Date();
       switch (operator) {
         case "today":
-          let today = new Date();
           this.chosenFilter = "today";
 
           this.visits = this.allVisits
             .filter((x) => x.fromUserId === this.user.id)
             .filter((x) => {
-              return today.toDateString() == new Date(x.date).toDateString();
+              return today.toDateString() < new Date(x.date).toDateString();
+            });
+
+          break;
+        case "history":
+          this.chosenFilter = "history";
+
+          this.visits = this.allVisits
+            .filter((x) => x.fromUserId === this.user.id)
+            .filter((x) => {
+              return today > new Date(x.date);
             });
 
           break;

@@ -1,7 +1,7 @@
 import axios from "axios";
 import router from "../../router";
 const state = {
-  user: { id: "1122333" },
+  user: { id: "no_user" },
 };
 
 const getters = {

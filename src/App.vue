@@ -54,5 +54,8 @@ export default {
     },
    
   },
+  created() {
+     this.user.id === 'no_user' &&   this.$router.push("/auth");
+  }
 };
 </script>
