@@ -1,7 +1,9 @@
 Run Programm :
 
 npm i 
-npm run serve
-npm run backend
+
+npm run serve 
+
+npm run backend 
 
 Enjoy :)
