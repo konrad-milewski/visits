@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "name": "Karolina Opek",
+      "email": "778 223 332",
+      "password": "Spotkanie w sprawie rekrutacji",
+      "password_sec": "21.05.2022",
+      "surname": "15:15"
+    },
+    {
+      "id": 13234,
+      "name": "Konrad",
+      "surname": "M"
+    },
+    {
+      "id": 50896,
+      "name": "Kondri",
+      "surname": "Milewski"
+    },
+    {
+      "id": 75952,
+      "name": "Konrad",
+      "surname": "Milewski"
+    },
+    {
+      "name": "Konard",
+      "surname": "Milewski",
+      "id": 10391
+    }
+  ],
+  "visits": [
+    {
+      "name": "Karolina Opek",
+      "phone": "778 223 332",
+      "description": "Spotkanie w sprawie rekrutacji",
+      "date": "21.05.2022",
+      "time": "15:15",
+      "location": "Biuro",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone."
+    },
+    {
+      "name": "Karolina Kowalska",
+      "phone": "778 223 332",
+      "description": "Spotkanie w sprawie rekrutacji",
+      "date": "21.05.2022",
+      "time": "15:15",
+      "location": "Biuro",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone."
+    },
+    {
+      "name": "Karolina Omar",
+      "phone": "778 223 332",
+      "description": "Spotkanie w sprawie rekrutacji",
+      "date": "21.05.2022",
+      "time": "15:15",
+      "location": "Biuro",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone."
+    },
+    {
+      "id": 61623,
+      "name": "fbdfb",
+      "surname": "",
+      "phone": "",
+      "date": "",
+      "time": "",
+      "location": "",
+      "icon": "fa-circle-xmark"
+    },
+    {
+      "id": 35042,
+      "name": "Konrad",
+      "surname": "Milewski",
+      "phone": 1234322324,
+      "date": "2022-05-09",
+      "time": "11:01",
+      "description": "Opis mój",
+      "location": "Okej",
+      "icon": "fa-circle-check"
+    },
+    {
+      "id": 38864,
+      "name": "Konrad",
+      "surname": "Milewski",
+      "phone": 123123123,
+      "date": "3223-12-12",
+      "time": "",
+      "location": "",
+      "status": "danger",
+      "status_description": "W oczekiwaniu",
+      "icon": "fa-question-circle"
+    },
+    {
+      "id": 96915,
+      "name": "Konrad",
+      "surname": "Milewski",
+      "phone": 786343233,
+      "date": "2022-05-12",
+      "time": "11:08",
+      "description": "Rozmowa o prace",
+      "location": "Biuro",
+      "status": "danger",
+      "status_description": "W oczekiwaniu",
+      "icon": "fa-question-circle"
+    },
+    {
+      "id": 58989,
+      "name": "jygjghj",
+      "surname": "",
+      "phone": "",
+      "date": "2022-05-22",
+      "time": "",
+      "description": "ghjgj",
+      "location": "jghjghj",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu"
+    },
+    {
+      "id": 55360,
+      "name": "hfh",
+      "surname": "hgfhfgh",
+      "phone": "",
+      "date": "",
+      "time": "",
+      "location": "",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu"
+    },
+    {
+      "id": 22543,
+      "name": "edfgdfb",
+      "surname": "",
+      "phone": "",
+      "date": "0002-03-23",
+      "time": "12:20",
+      "location": "",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu"
+    },
+    {
+      "id": 82898,
+      "name": "Konrad Milewski",
+      "surname": "Milewski",
+      "phone": 786853445,
+      "date": "2022-05-27",
+      "time": "12:28",
+      "description": "wIZYTA",
+      "location": "SACASV",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu"
+    },
+    {
+      "name": "Jacek",
+      "surname": "M",
+      "phone": 786853445,
+      "date": "2002-02-12",
+      "time": "16:10",
+      "description": "Wizyta w biurze",
+      "location": "Biuro",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu",
+      "id": 74185
+    },
+    {
+      "name": "Najnowsze",
+      "surname": "|Naj",
+      "phone": 123123123,
+      "date": "2222-02-12",
+      "time": "12:22",
+      "description": "21231",
+      "location": "123",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu",
+      "id": 56689
+    },
+    {
+      "name": "432423",
+      "surname": "34234",
+      "phone": 123123123,
+      "date": "123123-03-12",
+      "time": "12:32",
+      "description": "213123",
+      "location": "124242",
+      "status": "secondary",
+      "status_description": "W oczekiwaniu",
+      "id": 81482,
+      "icon": "fa-circle-xmark"
+    }
+  ]
+}

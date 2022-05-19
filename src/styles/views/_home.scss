@@ -1,0 +1,36 @@
+.title-of-section{
+    color: white;
+    position: fixed;
+    left: 60px;
+    top: -5px;
+    font-size: 25px;
+
+}
+
+.title-of-section{
+    color: white;
+    position: fixed;
+    left: 60px;
+    top: 8px;
+    font-size: 25px;
+
+}
+
+.title-add-visit{
+    color: white;
+    position: fixed;
+    right: 80px;
+    top: 8px;
+    font-size: 15px;
+
+
+}
+
+.visitblock-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+   
+    flex-wrap: wrap;
+}

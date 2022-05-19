@@ -1,0 +1,32 @@
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: $primary-color
+}
+.text-success{
+    color: $success-color
+}
+
+.text-danger{
+    color: $danger-color
+}
+
+.text-white{
+    color: white
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.d-none{
+    display: none;
+}
+
+.left-top-pos{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
