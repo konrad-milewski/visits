@@ -7,7 +7,7 @@
   </div>
 
   <router-link class="btn left-top-pos" to="/auth">Wyloguj</router-link>
-  
+
 </template>
 
 <script>
@@ -60,7 +60,9 @@ export default {
         case "all": {
           this.visits = this.allVisits.filter(
             (x) => x.fromUserId === this.user.id
-          );
+          ).filter((x) => {
+              return today < new Date(x.date);
+            });
         }
         default:
           break;
