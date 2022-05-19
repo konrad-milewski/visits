@@ -10,7 +10,7 @@ const getters = {
 
 const actions = {
   async login({ commit }, userData) {
-    const users = await axios.get(`http://localhost:5000/users`);
+    const users = await axios.get(`api/users`);
 
     let user = users.data.find((x) => x.email === userData.email);
 
@@ -27,7 +27,7 @@ const actions = {
     }
   },
   async registerUser({ commit }, userData) {
-    const users = await axios.get(`http://localhost:5000/users`);
+    const users = await axios.get(`api/users`);
 
     let isEmailExist = users.data.some((x) => x.email === userData.email);
     console.log(users.data);
@@ -36,7 +36,7 @@ const actions = {
       return;
     }
 
-    const res = await axios.post(`http://localhost:5000/users`, userData);
+    const res = await axios.post(`api/users`, userData);
     commit("setUser", res.data);
 
     router.push("/");

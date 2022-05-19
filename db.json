@@ -537,10 +537,25 @@
       "time": "04:35",
       "description": "432",
       "location": "5325",
-      "status": "secondary",
-      "status_description": "Wysłano powiadomienie",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone",
       "id": 88753,
-      "icon": " fa-question-circle",
+      "icon": " fa-circle-check",
+      "reminderCall": false,
+      "fromUserId": 92490
+    },
+    {
+      "name": "rthbdf",
+      "surname": "gfhfd",
+      "phone": 3124,
+      "date": "0004-03-04",
+      "time": "04:03",
+      "description": "432",
+      "location": "4532",
+      "status": "danger",
+      "status_description": "Spotkanie zostało odrzucone",
+      "id": 71428,
+      "icon": " fa-circle-xmark",
       "reminderCall": false,
       "fromUserId": 92490
     }

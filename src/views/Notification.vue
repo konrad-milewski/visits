@@ -1,6 +1,6 @@
 <template>
   <VisitBlock :visit="visit" isFromNotification="{{true}}" />
-  <h1 class="text-white w-30 m-auto">
+  <h1 class="text-white ">
     Przypomnienie o spotkaniu z {{ user.name }} {{ user.surname }}
   </h1>
   <h2 class="text-white">Czy potwierdzasz to spotkanie?</h2>
