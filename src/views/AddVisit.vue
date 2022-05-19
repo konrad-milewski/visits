@@ -87,9 +87,10 @@ export default {
 
       let additionalData = {
         status: "secondary",
-        status_description: "W oczekiwaniu",
+        status_description: "Nie wysłano powiadomienia",
         id: Math.floor(Math.random() * 100000),
         icon: "fa-question-circle",
+        reminderCall: false
       };
 
       newVisit = { ...newVisit, ...additionalData, fromUserId : this.user.id };

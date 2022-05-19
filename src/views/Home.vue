@@ -2,18 +2,17 @@
   <Navigation @filter="filter" :visits="visits" />
   <div class="visitblock-container">
     <div v-for="visit in visits" :key="visit.id">
-      <VisitBlock :visit="visit" />
+      <VisitBlock :visit="visit" @deleteVisit="deleteVisitFunc" />
     </div>
   </div>
 
   <router-link class="btn left-top-pos" to="/auth">Wyloguj</router-link>
-
 </template>
 
 <script>
 import VisitBlock from "../components/VisitBlock.vue";
 import Navigation from "../components/Navigation.vue";
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters, mapActions,mapState } from "vuex";
 
 export default {
   name: "Home",
@@ -30,9 +29,10 @@ export default {
       visits: [],
     };
   },
+ 
 
   methods: {
-    ...mapActions(["fetchAllVisits"]),
+    ...mapActions(["fetchAllVisits", "deleteVisit"]),
     filter(operator) {
       let today = new Date();
       switch (operator) {
@@ -58,9 +58,9 @@ export default {
           break;
 
         case "all": {
-          this.visits = this.allVisits.filter(
-            (x) => x.fromUserId === this.user.id
-          ).filter((x) => {
+          this.visits = this.allVisits
+            .filter((x) => x.fromUserId === this.user.id)
+            .filter((x) => {
               return today < new Date(x.date);
             });
         }
@@ -68,11 +68,23 @@ export default {
           break;
       }
     },
+    deleteVisitFunc(id) {
+       console.log(id, 'lol')
+       this.deleteVisit(id)
+      
+       this.visits = this.visits.filter(x =>  x.id !== id )
+  
+    }
   },
   async created() {
+    let today = new Date();
     console.log("is this working");
     let res = await this.fetchAllVisits();
-    this.visits = this.allVisits.filter((x) => x.fromUserId === this.user.id);
+    this.visits = this.allVisits
+      .filter((x) => x.fromUserId === this.user.id)
+      .filter((x) => {
+        return today < new Date(x.date);
+      });
   },
   computed: mapGetters(["allVisits", "user"]),
 };

@@ -237,20 +237,6 @@
       "icon": "fa-question-circle"
     },
     {
-      "name": "777",
-      "surname": "777",
-      "phone": 777,
-      "date": "7777-07-07",
-      "time": "07:59",
-      "description": "77",
-      "location": "77",
-      "status": "secondary",
-      "status_description": "W oczekiwaniu",
-      "id": 64013,
-      "icon": "fa-question-circle",
-      "fromUserId": 92490
-    },
-    {
       "name": "213",
       "surname": "123",
       "phone": 123,
@@ -391,48 +377,6 @@
       "fromUserId": "1122333"
     },
     {
-      "name": "Kondri",
-      "surname": "Milewa",
-      "phone": 123,
-      "date": "3123-12-12",
-      "time": "12:03",
-      "description": "123",
-      "location": "123",
-      "status": "secondary",
-      "status_description": "W oczekiwaniu",
-      "id": 87150,
-      "icon": "fa-question-circle",
-      "fromUserId": 92490
-    },
-    {
-      "name": "savsd",
-      "surname": "dsvsdv",
-      "phone": 123,
-      "date": "0123-03-12",
-      "time": "12:12",
-      "description": "123",
-      "location": "123",
-      "status": "secondary",
-      "status_description": "W oczekiwaniu",
-      "id": 60240,
-      "icon": "fa-question-circle",
-      "fromUserId": 92490
-    },
-    {
-      "name": "123",
-      "surname": "123",
-      "phone": 123,
-      "date": "0123-03-21",
-      "time": "21:03",
-      "description": "123",
-      "location": "123",
-      "status": "secondary",
-      "status_description": "W oczekiwaniu",
-      "id": 60016,
-      "icon": "fa-question-circle",
-      "fromUserId": 92490
-    },
-    {
       "name": "123",
       "surname": "123",
       "phone": 213,
@@ -515,6 +459,90 @@
       "id": 28746,
       "icon": "fa-question-circle",
       "fromUserId": 92986
+    },
+    {
+      "id": 38993
+    },
+    {
+      "id": 52254
+    },
+    {
+      "id": 79774
+    },
+    {
+      "name": "123",
+      "surname": "1342",
+      "phone": 4353,
+      "date": "0325-04-05",
+      "time": "05:35",
+      "description": "Spotkanie potwierdzone",
+      "location": "4325",
+      "status": "danger",
+      "status_description": "Wysłano powiadomienie",
+      "id": 61423,
+      "icon": " fa-circle-xmark",
+      "reminderCall": false,
+      "fromUserId": 92490
+    },
+    {
+      "name": "543",
+      "surname": "536",
+      "phone": 6533,
+      "date": "275760-05-06",
+      "time": "06:43",
+      "description": "6534",
+      "location": "653",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone",
+      "id": 93145,
+      "icon": " fa-circle-check",
+      "reminderCall": false,
+      "fromUserId": 92490
+    },
+    {
+      "name": "432",
+      "surname": "4325",
+      "phone": 325,
+      "date": "2325-04-05",
+      "time": "04:32",
+      "description": "5432",
+      "location": "523",
+      "status": "danger",
+      "status_description": "Spotkanie zostało odrzucone",
+      "id": 82846,
+      "icon": " fa-circle-xmark",
+      "reminderCall": false,
+      "fromUserId": 92490
+    },
+    {
+      "name": "Jacek",
+      "surname": "Milewski",
+      "phone": 123123123,
+      "date": "32124-12-12",
+      "time": "03:21",
+      "description": "2352",
+      "location": "23452",
+      "status": "success",
+      "status_description": "Spotkanie potwierdzone",
+      "id": 5298,
+      "icon": " fa-circle-check",
+      "reminderCall": false,
+      "fromUserId": 92490
+    },
+    {
+      "name": "3245",
+      "surname": "325",
+      "phone": 4532,
+      "date": "0053-04-23",
+      "time": "04:35",
+      "description": "432",
+      "location": "5325",
+      "status": "secondary",
+      "status_description": "Wysłano powiadomienie",
+      "id": 88753,
+      "icon": " fa-question-circle",
+      "reminderCall": false,
+      "fromUserId": 92490
     }
   ]
 }
